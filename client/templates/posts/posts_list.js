@@ -5,7 +5,7 @@
 //create a template helper called posts that return postsData array
 
 Template.postsList.helpers({
-   posts:function() {
+   'posts' :function() {
      return Posts.find();
    }
 });

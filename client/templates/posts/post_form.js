@@ -7,6 +7,7 @@ Template.postForm.events({
 
     // stop the form from submitting
     event.preventDefault();
+
     Posts.insert({
       title: event.target.url.value,
       url: event.target.url.value
