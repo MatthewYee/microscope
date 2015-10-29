@@ -1,5 +1,5 @@
 /**
- * Created by Kelsie on 10/28/2015.
+ * Created by Matthew Yee and credit to Kelsie on 10/28/2015.
  */
 var postsData = [
   {
