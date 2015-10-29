@@ -3,7 +3,7 @@
  */
 
 Meteor.methods({
-
+// Was a lot simplier than I thought it was
   addPost: function(newPost) {
     Posts.insert(newPost);
   }
