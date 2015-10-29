@@ -1,7 +1,6 @@
 /**
- * Created by MGY on 10/28/2015.
+ * Created by Kelsie on 10/28/2015.
  */
-
 Template.postItem.helpers({
   domain: function() {
     var a = document.createElement('a');

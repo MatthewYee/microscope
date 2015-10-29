@@ -1,18 +1,22 @@
 /**
- * Created by MGY on 10/29/2015.
+ * Created by Kelsie on 10/28/2015.
  */
+
 Template.postForm.events({
+
   // handle the form submission
   'submit form': function(event, template) {
 
     // stop the form from submitting
     event.preventDefault();
 
-    Posts.insert({
-      title: event.target.url.value,
+    var newPost = {
+      title: event.target.title.value,
       url: event.target.url.value
-    });
-    template.find("form").reset();
-  }
+    };
 
+    template.find("form").reset();
+
+    Meteor.call("addPost", newPost);
+  }
 });

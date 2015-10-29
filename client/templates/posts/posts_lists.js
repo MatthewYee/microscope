@@ -1,20 +1,23 @@
 /**
  * Created by Kelsie on 10/28/2015.
  */
-
-if (Posts.find().count() === 0) {
-  Posts.insert({
+var postsData = [
+  {
     title: 'Introducing Telescope',
     url: 'http://sachagreif.com/introducing-telescope/'
-  });
-
-  Posts.insert({
+  },
+  {
     title: 'Meteor',
     url: 'http://meteor.com'
-  });
-
-  Posts.insert({
+  },
+  {
     title: 'The Meteor Book',
     url: 'http://themeteorbook.com'
-  });
-}
+  }
+];
+
+Template.postsList.helpers({
+  posts: function() {
+    return Posts.find();
+  }
+});
