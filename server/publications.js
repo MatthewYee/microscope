@@ -1,6 +1,6 @@
 /**
- * Created by MGY on 10/28/2015.
+ * Created by Matthew Yee on 10/28/2015.
  */
-Meteor.publish('posts',function(){
+Meteor.publish('posts', function() {
   return Posts.find();
 });
